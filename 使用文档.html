@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery.Score.2.0 五角星评分插件-似懂非懂</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script language="javascript" src="js/jquery-1-7-2.js"></script>
+<script language="javascript" src="js/jquery.Score.js"></script>
+<script>
+$(function(){
+	$("#scoreValue").Score({
+		showBranch:5,//分数
+		icoBefore:"images/30-30-off.gif",//灰色的图片地址
+		icoAfter:"images/30-30-on.gif", //彩色的图片地址
+		showWidth:30, //子元素宽度
+		showHeight:30 //子元素高度
+	});
+})	
+
+
+</script>
+<style>
+/*第一个*/
+.scoreBox{ width:0px; height:10px; position:relative;}
+.scoreBox ul,.scoreBox li{ padding:0px; margin:0px; list-style:none;}
+.starBg{ width:0px; height:10px; position:relative; z-index:998; }
+.maskBox{display:block; width:50px; height:10px; overflow:hidden; position:absolute; z-index:999; top:0px; left:0px; padding:0px; margin:0px;}
+.maskBox li,.starBg li{display:block;width:5px; height:10px; overflow:hidden; float:left; cursor:pointer;}
+</style>
+</head>
+
+<body style="font-size:12px;">
+<p style="line-height:200%; color:#666;">
+	<span style="font-family: 微软雅黑; font-size:20px; line-height:40px;">插件名：Jquery.Score评分插件(基于Jquery.1.3或以上版本)</span><Br>
+	<span style="padding:5px 24px; display:inline-block;width:auto; background:#328cc6; color:#fff; border:1px solid #2773ad;border-radius: 15px 8px;-moz-border-radius: 15px;">
+	大小：3KB<br>
+	发布日期：2012-5-20<br>
+	版本：2.0<br>
+    升级内容：简化Js代码，简化调用方式。
+	共享：免费（不用商业用途的情况下可任意使用。）
+	开发者：似懂非懂<br>
+	Blog：www.haw86.com<br>
+  </span>
+</p>
+
+<p style="line-height:200%; color:#666;">
+	<span style="font-family: 微软雅黑; font-size:20px; line-height:40px;">效果预览：</span><Br>
+</p>
+	<input type="hidden" id="scoreValue" />
+
+
+<p style="line-height:200%; color:#666;">
+	<b style="color:#666;font-family: 微软雅黑; ">Demos：</b><bR>
+	<span style="padding:5px 24px; display:inline-block;width:auto;">
+        &lt;input type=&quot;hidden&quot; id=&quot;scoreValue&quot; /&gt;<br />
+	</span>
+</p>
+
+<p style="line-height:200%; color:#888;">
+  <b style="color:#666;font-family: 微软雅黑; ">css样式文件：</b><bR>
+	<span style="padding:5px 24px; display:inline-block;width:auto;  box-shadow: 5px 5px 5px 0px lightgray; background:#328cc6; color:#fff; border:1px solid #2773ad;border-radius: 15px 8px;-moz-border-radius: 15px;">&lt;style&gt;<br />
+	.scoreBox{ width:0px; height:10px; position:relative;}<br />
+	.scoreBox ul,.scoreBox li{ padding:0px; margin:0px; list-style:none;}<br />
+	.starBg{ width:0px; height:10px; position:relative; z-index:998; }<br />
+	.maskBox{display:block; width:50px; height:10px; overflow:hidden; position:absolute; z-index:999; top:0px; left:0px; padding:0px; margin:0px;}<br />
+	.maskBox li,.starBg li{display:block;width:5px; height:10px; overflow:hidden; float:left; cursor:pointer;}<br />
+	&lt;/style&gt;<br />
+	<br />
+	<br />
+	</span>
+</p>
+
+<p style="line-height:200%; color:#888;">
+	<b style="color:#666;font-family: 微软雅黑; ">插件调用方法：</b><bR>
+	<span style="padding:5px 24px; display:inline-block;width:auto; background:#328cc6; color:#fff; border:1px solid #2773ad;border-radius: 15px 8px;-moz-border-radius: 15px;">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+	$(function(){<br />
+$(&quot;#scoreValue&quot;).Score({<br />
+showBranch:5,//分数<br />
+icoBefore:&quot;images/30-30-off.gif&quot;,//灰色的图片地址<br />
+icoAfter:&quot;images/30-30-on.gif&quot;, //彩色的图片地址<br />
+showWidth:30, //子元素宽度<br />
+showHeight:30 //子元素高度<br />
+});<br />
+}) <br />
+&lt;/script&gt;<br />
+<br />
+
+	</span>
+</p>
+
+<p style="line-height:200%; color:#888;">
+  <b style="color:#666;font-family: 微软雅黑; ">下载地址：</b><bR>
+	<span style="padding:5px 24px; display:inline-block;width:auto;">
+		<A href="/down/jquery.Score.2.0/jquery.Score.2.0.rar" target="_blank">Jquery.Score.2.0 评分插件</a>  如有新版本，会继续在此更新...
+	</span>
+</p>
+
+
+
+</body>
+</html>
